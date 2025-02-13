@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+}
+
+.container {
+    /* position: relative; */
+    width: 500px;
+    
+    border-radius: 20px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #333;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5);
+    transition: all 0.2s ease;
+}
+
+
+.buttons button.operator {
+    background: linear-gradient(145deg, #2f9fff, #1e90ff);
+    color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.buttons button.operator:active {
+    background: linear-gradient(145deg, #1e90ff, #2f9fff);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.buttons button[data-value="="] {
+    grid-column: span 1;
+    background: linear-gradient(145deg, #ff6f61, #ff4500);
+    color: #fff;
+}
+
+.buttons button[data-value="="]:active {
+    background: linear-gradient(145deg, #ff4500, #ff6f61);
+}
