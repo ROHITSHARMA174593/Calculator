@@ -2,13 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     height: 100vh;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,9 +14,9 @@ body {
 }
 
 .container {
-    /* position: relative; */
-    width: 500px;
-    
+    position: relative;
+    max-width: 300px;
+    width: 100%;
     border-radius: 20px;
     padding: 20px;
     background: #fff;
@@ -58,6 +56,10 @@ body {
     transition: all 0.2s ease;
 }
 
+.buttons button:active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
 
 .buttons button.operator {
     background: linear-gradient(145deg, #2f9fff, #1e90ff);
@@ -71,7 +73,7 @@ body {
 }
 
 .buttons button[data-value="="] {
-    grid-column: span 1;
+    grid-column: span 2;
     background: linear-gradient(145deg, #ff6f61, #ff4500);
     color: #fff;
 }
@@ -79,181 +81,3 @@ body {
 .buttons button[data-value="="]:active {
     background: linear-gradient(145deg, #ff4500, #ff6f61);
 }
-=======
-    list-style-type: none;
-    text-decoration: none;
-}
-
-html {
-    font-size: 62.5%; /* 1rem = 10px */
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-/* Section 1: Navbar */
-.navbar-section {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar {
-    width: 100%;
-    background: linear-gradient(90deg, rgb(44, 103, 222) 0%, lightseagreen 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
-
-.navbar h1 {
-    font-size: 4rem; /* Increased from 3rem */
-    color: #fff;
-   
-}
-
-.nav-list ul {
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-list ul li a {
-    color: #000;
-    font-size: 2rem; /* Increased from 1.6rem */
-    transition: color 0.3s;
-}
-
-.nav-list ul li a:hover {
-    color: yellow;
-}
-
-/* Section 2: Hero Section */
-.hero-section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(90deg, rgb(228, 178, 225) 0%, rgb(108, 108, 230));
-    padding: 0 5vw;
-}
-
-.intro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-.headerText{
-    line-height: 80px;
-}
-.intro-text {
-    max-width: 50%;
-}
-
-.intro-text h1 {
-    font-size: 8rem; /* Increased from 6rem */
-    margin-bottom: 2rem;
-}
-
-.intro-text h3 {
-    font-size: 3.5rem; /* Increased from 2.5rem */
-    margin-bottom: 1.5rem;
-}
-
-.intro-text p {
-    font-size: 2.5rem; /* Increased from 1.8rem */
-    margin-bottom: 2rem;
-}
-
-.intro-text .btn {
-    display: flex;
-    gap: 1rem;
-}
-
-.intro-text .btn button {
-    padding: 1.5rem 3rem; /* Increased padding */
-    font-size: 2rem; /* Increased from 1.6rem */
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.intro-text .btn button:hover {
-    background-color: #333;
-}
-
-.intro-image img {
-    max-width: 40vw;
-    height: auto;
-}
-
-/* Section 3: About Section */
-.about-section {
-    padding: 10vh 5vw;
-    text-align: center;
-}
-
-.about-theory h1 {
-    font-size: 5rem; /* Increased from 4rem */
-    margin-bottom: 1rem;
-}
-
-.about-theory h2 {
-    font-size: 3rem; /* Increased from 2rem */
-    color: aqua;
-    margin-bottom: 2rem;
-}
-
-.about-theory p {
-    font-size: 2.5rem; /* Increased from 1.6rem */
-    margin-bottom: 4rem;
-}
-
-.golas {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 4rem;
-}
-
-.gola {
-    text-align: center;
-}
-
-.gola img {
-    width: 15rem; /* Increased from 8rem */
-    height: 15rem; /* Increased from 8rem */
-    margin-bottom: 2rem; /* Increased margin */
-}
-
-.gola h2 {
-    font-size: 3rem; /* Increased from 2rem */
-    margin-bottom: 1.5rem; /* Increased margin */
-}
-
-.gola p {
-    font-size: 2rem; /* Increased from 1.4rem */
-}
-
-.btndiv button {
-    padding: 1.5rem 3rem; /* Increased padding */
-    font-size: 2rem; /* Increased from 1.6rem */
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btndiv button:hover {
-    background-color: #333;
-}
-
->>>>>>> 562653305a9a13ad58e5066aa3e018514fbaa3c0
