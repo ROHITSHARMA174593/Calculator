@@ -15,8 +15,8 @@ body {
 
 .container {
     position: relative;
-    max-width: 300px;
-    width: 100%;
+    width: 28vw;
+    
     border-radius: 20px;
     padding: 20px;
     background: #fff;
@@ -73,7 +73,7 @@ body {
 }
 
 .buttons button[data-value="="] {
-    grid-column: span 2;
+    /* grid-column: span 2; */
     background: linear-gradient(145deg, #ff6f61, #ff4500);
     color: #fff;
 }
